@@ -1,8 +1,8 @@
 import React from 'react'
 import ServiceBox from './ServiceBox'
-import lines from '../images/element_right.png'
-import SectionTitle from './generics/SectionTitle'
-import Button from './generics/Button'
+import lines from '../../images/element_right.png'
+import SectionTitle from '../generics/SectionTitle'
+import Button from '../generics/Button'
 
 const ServiceSection = () => {
 

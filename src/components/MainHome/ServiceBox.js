@@ -1,6 +1,6 @@
 import React from 'react'
-import black_line from '../images/black_line.png'
-import arrow_black from '../images/arrow-black.png'
+import black_line from '../../images/black_line.png'
+import arrow_black from '../../images/arrow-black.png'
 
 const ServiceBox = ({title, description, url}) => {
   return (
