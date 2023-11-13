@@ -1350,8 +1350,10 @@ footer {
             align-items: center;
             justify-content: center;
             text-align: center;
+            flex-direction: column;
             padding-top: 145px;
             padding-bottom: 30px;
+            gap: 10px;
             @media (min-width: 1400px) {
                 padding-left: 425px;
                 padding-right: 425px;
@@ -1362,8 +1364,10 @@ footer {
             font-weight: 700;
             font-size: 45px;
             display: inline-block;
-            
-            
+            }
+            .error-message {
+                color: red;
+                font-size: 22px;
             }
         }
       

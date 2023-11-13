@@ -1238,8 +1238,10 @@ footer .container .social_media a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
   padding-top: 145px;
   padding-bottom: 30px;
+  gap: 10px;
 }
 @media (min-width: 1400px) {
   .contact_form .container .form_title {
@@ -1252,6 +1254,10 @@ footer .container .social_media a:hover {
   font-weight: 700;
   font-size: 45px;
   display: inline-block;
+}
+.contact_form .container .form_title .error-message {
+  color: red;
+  font-size: 22px;
 }
 .contact_form .container form .form_group {
   display: flex;

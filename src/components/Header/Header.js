@@ -1,5 +1,7 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Logotype from '../../images/logotype.svg'
+
 
 const Header = () => {
   return (
@@ -32,10 +34,10 @@ const Header = () => {
                 </div>
                 <div className="nav_menu">
                     <nav>
-                        <a className="active" href="index.html">Menu</a>
-                        <a href="#">Service</a>
-                        <a href="#">News</a>
-                        <a href="contact.html">Contact</a>
+                        <NavLink to="/">Menu</NavLink>
+                        <NavLink to="*">Service</NavLink>
+                        <NavLink to="*">News</NavLink>
+                        <NavLink to="Contacts">Contact</NavLink>
                     </nav>
                     <a className="btn-login btn-nav" href="#">Login <i className="fa-regular fa-arrow-up-right"></i></a>
                 </div>
