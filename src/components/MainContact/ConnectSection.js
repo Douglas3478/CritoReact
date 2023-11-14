@@ -1,13 +1,15 @@
 import React from 'react'
 import element from '../../images/Element.svg'
+import { NavLink } from 'react-router-dom'
 
 const ConnectSection = () => {
   return (
     <section className="connect_section">
             <div className="container">
                 <nav>
-                    <a href="index.html">Menu</a>
-                    <a className="contact_active" href="contact.html">Contact</a>
+                    <NavLink to="/">Menu</NavLink>
+                    <NavLink to="Contacts">Contact</NavLink>
+                    
                 </nav>
                 <div className="title_contact">
                     <h1>Let's Connect</h1>

@@ -15,7 +15,7 @@ const Contacts = () => {
       <ConnectSection />
       <ContactSection />
       <ContactForm />
-      {/* <GoogleMapsSection /> */}
+      <GoogleMapsSection />
       <SummarySection />
       <Footer />
     </div>

@@ -49,13 +49,13 @@ const ContactForm = () => {
             </div>
             <form onSubmit={handleSubmit} noValidate>
                 <div className="form_group">
-                    <input type="text" value={name} onChange={(e) => setName (e.target.value)} />
+                    <input type="text" placeholder="Name*" value={name} onChange={(e) => setName (e.target.value)} />
                 </div>
                 <div className="form_group">
-                    <input type="email" value={email} onChange={(e) => setEmail (e.target.value)} />
+                    <input type="email" placeholder="Email*" value={email} onChange={(e) => setEmail (e.target.value)} />
                 </div>
                 <div className="form_group">
-                    <textarea id="message" value={message} onChange={(e) => setMessage (e.target.value)}></textarea>
+                    <textarea id="message" placeholder="Your Message*" value={message} onChange={(e) => setMessage (e.target.value)}></textarea>
                 </div>
 
                 <div className="send_message">

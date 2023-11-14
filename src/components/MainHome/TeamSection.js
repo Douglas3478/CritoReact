@@ -3,8 +3,18 @@ import team_one from '../../images/team_one.png'
 import team_two from '../../images/team_two.png'
 import team_three from '../../images/team_three.png'
 import team_four from '../../images/team_four.png'
+import TeamBox from './MainComponents/TeamBox'
 
 const TeamSection = () => {
+
+    const team = [
+        { img: team_one, name: "Kristine Palmer", title: "Chef Operation Officer"},
+        { img: team_two, name: "Mark Aubri", title: "Senior Consultant"},
+        { img: team_three, name: "Kimberly Hansen", title: "Senior Consultant"},
+        { img: team_four, name: "Justin Willoman", title: "Senior Tech Consultant"},
+    ]
+
+
   return (
     <section className="team_section">
         <div className="container">
@@ -18,29 +28,9 @@ const TeamSection = () => {
                 </div>
             </div>
             <div className="team_members">
-                <div className="names_title">
-                    <img src={team_one} alt="" />
-                    <h3>Kristine Palmer</h3>
-                    <p>Chef Operation Officer</p>   
-                </div>
-                
-                <div className="names_title">
-                    <img src={team_two} alt="" />
-                    <h3>Mark Aubri</h3>
-                    <p>Senior Consultant</p>   
-                </div>
-                
-                <div className="names_title">
-                    <img src={team_three} alt="" />
-                    <h3>Kimberly Hansen</h3>
-                    <p>Senior Consultant</p>   
-                </div>
-                
-                <div className="names_title">
-                    <img src={team_four} alt="" />
-                    <h3>Justin Willoman</h3>
-                    <p>Senior Tech Consultant</p>   
-                </div>
+                {team.map ((team, index) => (
+                    <TeamBox key ={index} img={team.img} name={team.name} title={team.title} />
+                ))}
             </div>
             <div className="slider_dots">
                 <a href="#"><i className="fa-duotone fa-circle"></i></a>
