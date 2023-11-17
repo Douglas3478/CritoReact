@@ -36,7 +36,7 @@ const Header = () => {
                     <nav>
                         <NavLink to="/">Menu</NavLink>
                         <NavLink to="*">Service</NavLink>
-                        <NavLink to="*">News</NavLink>
+                        <NavLink to="News">News</NavLink>
                         <NavLink to="Contacts">Contact</NavLink>
                     </nav>
                     <a className="btn-login btn-nav" href="#">Login <i className="fa-regular fa-arrow-up-right"></i></a>

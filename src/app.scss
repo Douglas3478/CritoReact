@@ -1433,3 +1433,232 @@ footer {
     }
     
 }
+.news_articles_section {
+    .container {
+        .article_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 125px;
+            padding-bottom: 35px;
+            .section_title {
+                padding: 0;
+                p {
+
+                }
+                h2 {
+
+                }
+                
+            }
+            .browse_articles {
+                button {
+
+                }
+            }
+        }
+        
+        .business_articles {
+            
+            @media (min-width: 992px) and (max-width: 1400px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 1400px) {
+                display: flex; 
+                
+            }
+            article {
+                padding-right:0;
+                text-align: center;
+
+                @media (min-width: 1400px) {
+                    text-align: left; 
+                    padding-right: 30px;
+                    
+                    }
+                img {
+                    padding-bottom: 30px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                p {
+                    
+                }
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                }
+                p {
+
+                }
+            }
+            article:nth-child(3) {
+                grid-column: span 2;
+                width: 100%;
+                
+            }
+        }
+        
+        .slider_dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-top: 50px;
+            padding-bottom: 90px;
+            a {
+                text-decoration: none;
+                color: black;
+                
+            }
+        }
+    }
+}
+
+.classroom_kimberly{
+    .container{
+        .howtoclassroom{
+            padding-top: 125px;
+            
+            .kimberly_title {
+                inline-size: 545px;
+                h2 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 45px;
+                }
+
+            }
+            .title_dates {
+                display: flex;
+                gap: 70px;
+                p {
+
+                }
+            }
+        }
+        .news_article {
+            display: flex;
+            padding-top: 80px;
+            .article_kimberly {
+                img {
+
+                }
+                .text_news {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 45px;
+                    white-space: pre-line;
+                    padding-top: 45px;
+                    max-width: 758px;
+                }
+                .quote_news {
+                    display: flex;
+                    
+                    img {
+                        
+                        width: 35px; 
+                        height: 20px; 
+                    }
+                    p {
+                        font-size: 22px;
+                        font-weight: 600;
+                        padding-left: 25px;
+                    }
+                }
+                .news_button {
+                    display: flex;
+                    gap: 15px;
+                    .grey_button {
+                        background-color: #ccc;
+                        color: black;
+                        border: none;
+                        border-radius: 20px; 
+                        padding: 10px 20px; 
+                        font-size: 16px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                        &:hover {
+                            background-color: white;
+                            border: 1px solid black;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .post_categories {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+                padding-left: 140px;
+                padding-bottom: 465px;
+                form {
+                    width: 100%;
+                    gap: 15px;
+                    
+                    input {
+                        color: #191919;
+                        text-decoration: none;
+                        padding: 15px 30px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        border-radius: 25px;
+                        outline: none;
+                        border: 1px solid #1919191a;
+                        margin-right: 0;
+                        @media (min-width: 1200px) {
+                            margin-right: 20px;    
+                            
+                        }
+                    }
+                }
+                .recent_posts {
+                    border: 1px solid grey;
+                    padding: 40px;
+                    
+                    h3 {
+                        font-size: 22px;
+                        padding-bottom: 30px;
+                    }
+                    article {
+                        h4 {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                        }
+                        p {
+                            font-weight: 400;
+                            border-bottom: 1px solid grey;
+                            padding-bottom: 12px;
+                        }
+                }
+                .categories {
+                    border: 1px solid grey;
+                    padding: 40px;
+                    h4 {
+                        font-size: 22px;
+                        padding-bottom: 30px;
+                    }
+                    p {
+                        .pre-count {
+                            font-weight: 700;
+                        }
+                        .post_count {
+                            font-weight: 400;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
