@@ -10,9 +10,21 @@ import Service_Eight from '../../images/service_eight.png'
 import Service_Nine from '../../images/service_nine.png'
 import Digitalization from '../../views/Digitalization'
 import { Link } from 'react-router-dom'
+import NewsArticlesBox from './NewsComponents/NewsArticlesBox'
+import NewsSliderDots from './NewsComponents/NewsSliderDots'
 
 const NewsArticles = () => {
 
+    const articles = [
+        {img: News_Two, title: "Business", description: "How To Implement Chat GPT In Your Projects", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: News_Three, title: "Business", description: "The Guide To Support Modern CSS Design", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: Service_Four, title: "Business", description: "Why You Need To Implement The Five S's", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: Service_Five, title: "Business", description: "Get More Involved With Your End Users", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: Service_Six, title: "Business", description: "Guided Tour Of Our New Head Office In Stockholm", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: Service_Seven, title: "Business", description: "Using Business Intelligence To Get Insights Into Our Businesses", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: Service_Eight, title: "Business", description: "Apple Has Released New Products. Are They Any Good?", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {img: Service_Nine, title: "Business", description: "How To Improve Your Teams And Get A Better Result", text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+    ]
   return (
     <section className="news_articles_section">
         <div className="container">
@@ -22,6 +34,8 @@ const NewsArticles = () => {
                 </div>
             </div>
             <div className="business_articles">
+                
+                
                 <article>
                     <Link to="/Digitalization">
                         <img src={News_One}/>
@@ -30,68 +44,11 @@ const NewsArticles = () => {
                     <h3>How To Use Digitalization In The Classroom</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                 </article>
-                <article>
-                    <img src={News_Two}/>
-                    <p>Business</p>
-                    <h3>How To Implement Chat GPT In Your Projects</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-                <article>
-                    <img src={News_Three}/>
-                    <p>Business</p>
-                    <h3>The Guide To Support Modern CSS Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
+                {articles.map ((articles, index) =>(
+                    <NewsArticlesBox key ={index} img={articles.img} title={articles.title} description={articles.description} text={articles.text} />
+                ))}
             </div>
-            <div className="business_articles">
-                <article>
-                    <img src={Service_Four}/>
-                    <p>Business</p>
-                    <h3>Why You Need To Implement The Five S's</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-                <article>
-                    <img src={Service_Five}/>
-                    <p>Business</p>
-                    <h3>Get More Involved With Your End Users</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-                <article>
-                    <img src={Service_Six}/>
-                    <p>Business</p>
-                    <h3>Guided Tour Of Our New Head Office In Stockholm</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-            </div>
-            <div className="business_articles">
-                <article>
-                    <img src={Service_Seven} />
-                    <p>Business</p>
-                    <h3>Using Business Intelligence To Get Insights Into Our Businesses</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-                <article>
-                    <img src={Service_Eight} />
-                    <p>Business</p>
-                    <h3>Apple Has Released New Products. Are They Any Good?</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-                <article>
-                    <img src={Service_Nine} />
-                    <p>Business</p>
-                    <h3>How To Improve Your Teams And Get A Better Result</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
-                </article>
-            </div>
-            <div className="slider_dots">
-                <a href="#"><i className="fa-sharp fa-solid fa-circle"></i></a>
-                <a href="#"><i className="fa-duotone fa-circle"></i></a>
-                <a href="#"><i className="fa-duotone fa-circle"></i></a>
-                <a href="#"><i className="fa-duotone fa-circle"></i></a>
-                <a href="#"><i className="fa-duotone fa-circle"></i></a>
-                <a href="#"><i className="fa-duotone fa-circle"></i></a>
-                <a href="#"><i className="fa-duotone fa-circle"></i></a>
-            </div>
+            <NewsSliderDots />
         </div>
 
     </section>
