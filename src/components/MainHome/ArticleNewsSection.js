@@ -2,6 +2,8 @@ import React from 'react'
 import news_one from '../../images/article_news_one.png'
 import news_two from '../../images/article_news_two.png'
 import news_three from '../../images/article_news_three.png'
+import { NavLink } from 'react-router-dom'
+import apicontext from '../../views/Apicontext'
 
 const ArticleNewsSection = () => {
   return (
@@ -13,7 +15,11 @@ const ArticleNewsSection = () => {
                         <h2>Get Every Single Articles & News</h2>
                     </div>
                     <div className="browse_articles">
-                        <button className="btn-transparent">Browse Articles <i className="fa-solid fa-arrow-up-right"></i></button>
+                    <NavLink to="/apicontext">
+                        <button className="btn-transparent">
+                            Browse Articles <i className="fa-solid fa-arrow-up-right"></i>
+                        </button>
+                    </NavLink>
                     </div>
                 </div>
                 <div className="business_articles">
